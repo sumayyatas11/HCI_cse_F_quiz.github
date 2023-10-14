@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ</title>
+    <script>
+        function result()
+        {
+            var ele=document.getElementsByName("kerela");
+            for(i=0;i,ele.length;i++)
+            {
+                if(ele[i].checked)
+            {
+                if(ele[i].value=="South")
+                {
+                    document.getElementById("res").innerHTML="Correct";
+                }
+                else{
+                    document.getElementById("res").innerHTML="Incorrect"; 
+                    }
+            }
+            }
+        }
+    </script>
+</head>
+<body>
+  <center><h1>WELCOME TO QUIZ</h1></center> 
+  <center><h2>All Questions Carries Same Marks</h2></center> 
+ 
+
+</body> <h3>4.where is kerela located?</h3>
+<input type="radio" name="kerela" value="West">West<br>
+<input type="radio" name="kerela" value="North">North<br>
+<input type="radio" name="kerela" value="East">East<br>
+<input type="radio" name="kerela" value="South">South<br>
+<input type="button" value="submit" onclick="result()">
+<div id="res"></div>
+</html>

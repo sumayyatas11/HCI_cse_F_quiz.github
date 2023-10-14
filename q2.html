@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ</title>
+    <script>
+                function result1()
+        {
+            var ele=document.getElementsByName("planet");
+            for(i=0;i,ele.length;i++)
+            {
+                if(ele[i].checked)
+            {
+                if(ele[i].value=="8")
+                {
+                    document.getElementById("res1").innerHTML="Correct";
+                }
+                else{
+                    document.getElementById("res1").innerHTML="Incorrect"; 
+                    }
+            }
+            }
+        }
+    </script>
+</head>
+<body>
+    <center><h1>WELCOME TO QUIZ</h1></center> 
+    <center><h2>All Questions Carries Same Marks</h2></center> 
+    <h3>2.How many planets are there?</h3>
+    <input type="radio" name="planet" value="8">8<br>
+    <input type="radio" name="planet" value="9">9<br>
+    <input type="radio" name="planet" value="6">6<br>
+    <input type="radio" name="planet" value="7">7<br>
+    <input type="button" value="submit" onclick="result1()">
+    <div id="res1"></div>
+  
+  
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ</title>
+    <script>
+        function result()
+        {
+            var ele=document.getElementsByName("capital");
+            for(i=0;i,ele.length;i++)
+            {
+                if(ele[i].checked)
+            {
+                if(ele[i].value=="Mango")
+                {
+                    document.getElementById("res").innerHTML="Correct";
+                }
+                else{
+                    document.getElementById("res").innerHTML="Incorrect"; 
+                    }
+            }
+            }
+        }
+    </script>
+</head>
+<body>
+  <center><h1>WELCOME TO QUIZ</h1></center> 
+  <center><h2>All Questions Carries Same Marks</h2></center> 
+  <h3>1.what is national fruit of India?</h3>
+  <input type="radio" name="capital" value="Mango">Mango<br>
+  <input type="radio" name="capital" value="Apple">Apple<br>
+  <input type="radio" name="capital" value="Grapes">Grapes<br>
+  <input type="radio" name="capital" value="Strawberry">Strawberry<br>
+  <input type="button" value="submit" onclick="result()">
+  <div id="res"></div>
+</body>
+</html>
